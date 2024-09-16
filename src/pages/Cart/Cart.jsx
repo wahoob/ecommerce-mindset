@@ -8,6 +8,11 @@ const Cart = () => {
 
   const navigate = useNavigate();
 
+  const checkout = () => {
+    clearCart();
+    navigate("/checkout");
+  };
+
   return (
     <div className="3xl:px-[300px] 2xl:px-52 xl:px-36 lg:px-16 px-8 py-[4.5rem] flex max-xl:flex-col gap-6 items-start">
       <div className="border border-[#E4E7E9] rounded-[4px] flex-1 w-full flex flex-col justify-between pb-5">
@@ -77,7 +82,10 @@ const Cart = () => {
           </p>
         </div>
 
-        <button className="bg-[#FA8232] text-white px-8 py-4 flex items-center gap-3 rounded-[3px] w-full justify-center">
+        <button
+          className="bg-[#FA8232] text-white px-8 py-4 flex items-center gap-3 rounded-[3px] w-full justify-center"
+          onClick={checkout}
+        >
           <p className="max-sm:text-sm">PROCEED TO CHECKOUT</p>
           <div className="text-white size-4">
             <RightArrow />

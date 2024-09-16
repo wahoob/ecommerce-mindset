@@ -104,6 +104,7 @@ export const CartProvider = ({ children }) => {
 
   const clearCart = () => {
     dispatch({ type: ACTIONS.CLEAR });
+    dispatch({ type: ACTIONS.GET_TOTAL });
   };
   const addItem = (item, amount) => {
     dispatch({ type: ACTIONS.ADD_ITEM, payload: { ...item, amount } });
