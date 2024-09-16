@@ -5,7 +5,7 @@ import { Subscribe } from "../../components";
 import image from "../../assets/imgs/image.png";
 import person from "../../assets/imgs/person.png";
 import Banner from "../../assets/imgs/Banner.png";
-import image2 from "../../assets/imgs/image2.png";
+import image2 from "../../assets/imgs/Image2.png";
 
 const About = () => {
   return (
